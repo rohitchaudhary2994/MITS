@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MITS | Payment page</title>
+    <link rel="stylesheet" href="paymentpage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="img/20619095.jpg" type="image/x-icon">
+
+</head>
+
+<body>
+    <section class="header" id="menu">
+        <nav>
+            <a href="index.html"><img src="img/Capture4yw.png"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <div class="container">
+        <h1><u>Payment</u></h1>
+        <div class="first-row">
+            <div class="owner">
+                <h3>Owner</h3>
+                <div class="input-field">
+                    <input type="text" required>
+                </div>
+            </div>
+            <div class="cvv">
+                <h3>CVV</h3>
+                <div class="input-field">
+                    <input type="number" id="cvv" name="cvv" required>
+                </div>
+            </div>
+        </div>
+        <div class="second-row">
+            <div class="card-number">
+                <h3>Card Number</h3>
+                <div class="input-field">
+                    <input type="number" id="cardnumber" name="cardnumber" required>
+                </div>
+            </div>
+        </div>
+        <div class="third-row">
+            <h3>Card Expiry Date</h3>
+            <div class="container2">
+                <div class="selection">
+                    <div class="date">
+                        <select name="months" id="months" required>
+                            <option value="Jan" name="m1">Jan</option>
+                            <option value="Feb" name="m2">Feb</option>
+                            <option value="Mar" name="m3">Mar</option>
+                            <option value="Apr" name="m4">Apr</option>
+                            <option value="May" name="m5">May</option>
+                            <option value="Jun" name="m6">Jun</option>
+                            <option value="Jul" name="m7">Jul</option>
+                            <option value="Aug" name="m8">Aug</option>
+                            <option value="Sep" name="m9">Sep</option>
+                            <option value="Oct" name="m10">Oct</option>
+                            <option value="Nov" name="m11">Nov</option>
+                            <option value="Dec" name="m12">Dec</option>
+                        </select>
+                        <select name="years" id="years" required>
+                            <option value="2021" name="y1">2021</option>
+                            <option value="2022" name="y2">2022</option>
+                            <option value="2023" name="y3">2023</option>
+                            <option value="2024" name="y4">2024</option>
+                            <option value="2025" name="y5">2025</option>
+                            <option value="2026" name="y6">2026</option>
+                        </select>
+                    </div>
+                    <div class="cards">
+                        <img src="img/mc.png" alt="mastercard">
+                        <img src="img/vi.png" alt="visa">
+                        <img src="img/pp.png" alt="paypal">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="continuebtn">
+            <button id="myBtn" class="continuebtn-btn">Make Payment</button>
+
+
+        </section>
+    </div>
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Payment Successful.</p>
+        </div>
+
+    </div>
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on the button, open the modal
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            //   modal.style.display = "none";
+            window.location.href = "index.html";
+
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                // modal.style.display = "none";
+                window.location.href = "index.html";
+
+            }
+        }
+    </script>
+    <!-- ---------about us--------- -->
+    <section class="footer" id="Contact">
+        <h2>About Us</h2>
+        <h6>Moon in the Sky is a Sample Project made with an intention of creating a multi-paged website with a<br> backend database connected.</h6>
+        <br>
+        <br>
+        <div class="icons" id="Contact">
+            <a href="https://facebook.com" target="_blank" class="fa fa-facebook"></a>
+            <a href="https://twitter.com" target="_blank" class="fa fa-twitter"></a>
+            <a href="https://instagram.com" target="_blank" class="fa fa-instagram"></a>
+            <a href="https://linkedin.com" target="_blank" class="fa fa-linkedin"></a>
+        </div>
+        <div class="topio">
+            <p>mobile:9968934316</p>
+            <p>email:mooninthesky@gmail.com</p>
+            <br>
+            <br>
+            <h6>copyright ©2021 all rights reserved</h6>
+        </div>
+    </section>
+</body>
+
+</html>

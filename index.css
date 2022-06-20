@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(img/content6629.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 0% 6%;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    background-color: rgb(240, 56, 56);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 90%;
+}
+
+nav img {
+    width: 120px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 40px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: black;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+    background: black;
+}
+
+.text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 62px;
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+.text-box h6 {
+    font-size: 25px;
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 0.5s;
+}
+
+.audio {
+    display: none;
+}
+
+
+/* -------course------- */
+
+.section {
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 85%;
+    margin: auto;
+}
+
+.sectionTag {
+    font-size: 40px;
+}
+
+.section-left {
+    flex-direction: row-reverse;
+}
+
+.paras {
+    padding: 0 40px;
+}
+
+.letseat {
+    margin: auto;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/letseat.jpg);
+    background-position: center;
+    background-size: cover;
+    border: 1px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.letseat p {
+    font-size: 45px;
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+.letseat-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid rgb(223, 40, 40);
+    padding: 12px 34px;
+    font-size: 25px;
+    background: rgb(223, 40, 40);
+    position: relative;
+    cursor: pointer;
+}
+
+.letseat-btn:hover {
+    color: white;
+    border: 1px solid rgb(73, 2, 2);
+    background: rgb(73, 2, 2);
+    transition: 0.3s;
+}
+
+.Imgfluid {
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: 19px;
+}
+
+
+/* -----about us------ */
+
+.footer {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h2 {
+    margin-bottom: 25;
+    margin-top: 20;
+    font-weight: 600;
+}
+
+.topio {
+    color: rgb(61, 60, 58);
+}
+
+.audiohide {
+    display: none;
+}

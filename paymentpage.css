@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    padding: 0% 6%;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    background-color: rgb(240, 56, 56);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 90%;
+}
+
+nav img {
+    width: 120px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 40px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: black;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+    background: black;
+}
+
+.container {
+    width: 750px;
+    /* height: 500px; */
+    border: 2px solid;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.continuebtn-btn:hover {
+    color: white;
+    border: 1px solid rgb(73, 2, 2);
+    background: rgb(73, 2, 2);
+    transition: 0.3s;
+}
+
+.continuebtn-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid rgb(223, 40, 40);
+    padding: 12px 34px;
+    font-size: 25px;
+    background: rgb(223, 40, 40);
+    position: relative;
+    cursor: pointer;
+    /* border-radius: 200px; */
+    /* border radius is required? */
+}
+
+.continuebtn {
+    margin: auto;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    border: 1px;
+    text-align: center;
+    padding: 10px 0;
+    padding-bottom: 10px;
+}
+
+.continuebtntxt {
+    font-family: "Inter", sans-serif;
+    font-size: 60px;
+    padding: 30px;
+    text-align: center;
+}
+
+.cards img {
+    width: 100px;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.owner {
+    width: 100%;
+    margin-right: 40px;
+}
+
+.input-field {
+    border: 1px solid #999;
+}
+
+.input-field input {
+    width: 100%;
+    border: 2px;
+    outline: auto;
+    padding: 10px;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.first-row {
+    display: flex;
+}
+
+.owner {
+    width: 100%;
+    margin-right: 40px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.selection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px;
+}
+
+.selection select {
+    padding: 10px 20px;
+    border: 2px;
+    width: 100px;
+}
+
+.container2 {
+    border: 2px;
+    padding: 10px;
+}
+
+
+/* ----about us------  */
+
+.footer {
+    text-align: center;
+    padding: 30px 0;
+    background-color: rgb(228, 213, 213);
+}
+
+.footer h2 {
+    margin-bottom: 25;
+    margin-top: 20;
+    font-weight: 600;
+}
+
+.topio {
+    color: rgb(61, 60, 58);
+}
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content/Box */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+    /* Could be more or less, depending on screen size */
+}
+
+
+/* The Close Button */
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

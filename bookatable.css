@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    padding: 1.5px 75px;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    background-color: rgb(240, 56, 56);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 90%;
+}
+
+nav img {
+    width: 120px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 40px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: black;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+    background: black;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.4), rgba(4, 9, 30, 0.4)), url(img/blurimg1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.bookatable {
+    width: 500px;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    justify-content: center;
+    margin-top: 58px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(0, 0, 0);
+    border-radius: 100px;
+    /* border radius zaroori nhi ,i just did it for fun */
+}
+
+.bookatable h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+button {
+    margin: 10px 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+.headingtxt h1 {
+    color: white;
+    font-size: 50px;
+    margin-top: -30px
+}
+
+.rowthree {
+    display: flex;
+}
+
+.rowfour {
+    display: flex;
+}
+
+.rowonedetails {
+    width: 100%;
+    margin-right: 40px;
+}
+
+.input-field input {
+    width: 60%;
+    border: 10px solid #999;
+    /* outline: auto; */
+    padding: 10px;
+}
+
+.input-timings input {
+    width: 60%;
+    border: 10px solid #999;
+    /* outline: auto; */
+    padding: 10px;
+    margin-right: 65px;
+}
+
+.menubtn-btn:hover {
+    color: white;
+    border: 1px solid rgb(77, 4, 4);
+    background: rgb(77, 4, 4);
+    transition: 0.3s;
+}
+
+.menubtn-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid rgb(223, 40, 40);
+    padding: 12px 34px;
+    font-size: 25px;
+    background: rgb(223, 40, 40);
+    position: relative;
+    cursor: pointer;
+    margin-right: 20px;
+    border-radius: 200px;
+    /* border radius is required? */
+}
+
+.menubtn {
+    margin: auto;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    border: 1px;
+    text-align: center;
+    padding: 0px 0;
+}
+
+.menubtntxt {
+    padding: 30px;
+    text-align: center;
+}
+
+.menubtntxt h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 45px;
+    color: white;
+}
+
+h3 {
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+.audio {
+    display: none;
+}
+
+.input-field-2 input {
+    width: 20%;
+    border: 10px solid #999;
+    /* outline: auto; */
+    padding: 10px;
+}
+
+.confirm:hover {
+    color: white;
+    border: 2px solid rgb(0, 0, 0);
+    background: red;
+    transition: 0.3s;
+}
+
+.confirm {
+    border-radius: 20px;
+    text-transform: uppercase;
+    margin-left: 50%;
+    margin-right: 50%;
+    background-color: #f3e95d;
+    /* Green */
+    border: 2px solid black;
+    color: rgb(0, 0, 0);
+    padding: 12px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* ----about us------  */
+
+.footer {
+    text-align: center;
+    padding: 30px 0;
+    background-color: rgb(228, 213, 213);
+}
+
+.footer h2 {
+    margin-bottom: 25;
+    margin-top: 20;
+    font-weight: 600;
+}
+
+.topio {
+    color: rgb(61, 60, 58);
+}
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content/Box */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+    /* Could be more or less, depending on screen size */
+}
+
+
+/* The Close Button */
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
